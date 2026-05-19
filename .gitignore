@@ -1,0 +1,7 @@
+data_private/
+.env
+*.db
+credentials.json
+secrets.toml
+__pycache__/
+.ipynb_checkpoints/
