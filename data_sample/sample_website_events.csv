@@ -1,0 +1,72 @@
+event_date,visitor_id,session_id,traffic_source,device,landing_page,event_name,page_url
+2026-01-03,V001,S001,Google Organic,Mobile,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-01-03,V001,S001,Google Organic,Mobile,/home,gallery_view,https://www.shortoffmountainretreats.com/gallery/
+2026-01-03,V001,S001,Google Organic,Mobile,/home,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-01-05,V002,S002,Direct,Desktop,/book-your-stay,page_view,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-01-05,V002,S002,Direct,Desktop,/book-your-stay,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-01-07,V003,S003,Instagram,Mobile,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-01-07,V003,S003,Instagram,Mobile,/home,airbnb_review_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-01-11,V004,S004,Facebook,Mobile,/gallery,page_view,https://www.shortoffmountainretreats.com/gallery/
+2026-01-11,V004,S004,Facebook,Mobile,/gallery,gallery_view,https://www.shortoffmountainretreats.com/gallery/
+2026-01-14,V005,S005,Google Organic,Desktop,/linville-gorge,page_view,https://www.shortoffmountainretreats.com/
+2026-01-14,V005,S005,Google Organic,Desktop,/linville-gorge,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-01-14,V005,S005,Google Organic,Desktop,/linville-gorge,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-01-18,V006,S006,Referral,Desktop,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-01-18,V006,S006,Referral,Desktop,/home,contact_click,https://www.shortoffmountainretreats.com/contact/
+2026-01-21,V007,S007,Google Organic,Mobile,/book-your-stay,page_view,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-01-21,V007,S007,Google Organic,Mobile,/book-your-stay,airbnb_review_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-01-25,V008,S008,Direct,Mobile,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-01-25,V008,S008,Direct,Mobile,/home,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-02,V009,S009,Google Organic,Desktop,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-02-02,V009,S009,Google Organic,Desktop,/home,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-04,V010,S010,Instagram,Mobile,/gallery,page_view,https://www.shortoffmountainretreats.com/gallery/
+2026-02-04,V010,S010,Instagram,Mobile,/gallery,gallery_view,https://www.shortoffmountainretreats.com/gallery/
+2026-02-06,V011,S011,Google Ads,Mobile,/book-your-stay,page_view,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-06,V011,S011,Google Ads,Mobile,/book-your-stay,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-06,V011,S011,Google Ads,Mobile,/book-your-stay,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-10,V012,S012,Facebook,Desktop,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-02-10,V012,S012,Facebook,Desktop,/home,airbnb_review_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-12,V013,S013,Direct,Desktop,/book-your-stay,page_view,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-12,V013,S013,Direct,Desktop,/book-your-stay,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-15,V014,S014,Google Organic,Mobile,/things-to-do,page_view,https://www.shortoffmountainretreats.com/
+2026-02-15,V014,S014,Google Organic,Mobile,/things-to-do,gallery_view,https://www.shortoffmountainretreats.com/gallery/
+2026-02-15,V014,S014,Google Organic,Mobile,/things-to-do,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-21,V015,S015,Airbnb Referral,Mobile,/book-your-stay,page_view,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-02-21,V015,S015,Airbnb Referral,Mobile,/book-your-stay,contact_click,https://www.shortoffmountainretreats.com/contact/
+2026-02-25,V016,S016,Google Organic,Desktop,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-02-25,V016,S016,Google Organic,Desktop,/home,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-01,V017,S017,Direct,Mobile,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-03-01,V017,S017,Direct,Mobile,/home,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-03,V018,S018,Instagram,Mobile,/gallery,page_view,https://www.shortoffmountainretreats.com/gallery/
+2026-03-03,V018,S018,Instagram,Mobile,/gallery,airbnb_review_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-06,V019,S019,Google Organic,Desktop,/linville-gorge,page_view,https://www.shortoffmountainretreats.com/
+2026-03-06,V019,S019,Google Organic,Desktop,/linville-gorge,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-06,V019,S019,Google Organic,Desktop,/linville-gorge,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-09,V020,S020,Facebook,Mobile,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-03-09,V020,S020,Facebook,Mobile,/home,gallery_view,https://www.shortoffmountainretreats.com/gallery/
+2026-03-12,V021,S021,Google Ads,Desktop,/book-your-stay,page_view,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-12,V021,S021,Google Ads,Desktop,/book-your-stay,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-14,V022,S022,Referral,Mobile,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-03-14,V022,S022,Referral,Mobile,/home,contact_click,https://www.shortoffmountainretreats.com/contact/
+2026-03-18,V023,S023,Google Organic,Mobile,/things-to-do,page_view,https://www.shortoffmountainretreats.com/
+2026-03-18,V023,S023,Google Organic,Mobile,/things-to-do,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-22,V024,S024,Direct,Desktop,/book-your-stay,page_view,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-22,V024,S024,Direct,Desktop,/book-your-stay,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-03-27,V025,S025,Instagram,Mobile,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-03-27,V025,S025,Instagram,Mobile,/home,gallery_view,https://www.shortoffmountainretreats.com/gallery/
+2026-04-01,V026,S026,Google Organic,Desktop,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-04-01,V026,S026,Google Organic,Desktop,/home,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-04-01,V026,S026,Google Organic,Desktop,/home,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-04-05,V027,S027,Facebook,Mobile,/gallery,page_view,https://www.shortoffmountainretreats.com/gallery/
+2026-04-05,V027,S027,Facebook,Mobile,/gallery,airbnb_review_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-04-08,V028,S028,Direct,Mobile,/book-your-stay,page_view,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-04-08,V028,S028,Direct,Mobile,/book-your-stay,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-04-11,V029,S029,Google Ads,Mobile,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-04-11,V029,S029,Google Ads,Mobile,/home,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-04-16,V030,S030,Google Organic,Desktop,/things-to-do,page_view,https://www.shortoffmountainretreats.com/
+2026-04-16,V030,S030,Google Organic,Desktop,/things-to-do,gallery_view,https://www.shortoffmountainretreats.com/gallery/
+2026-04-16,V030,S030,Google Organic,Desktop,/things-to-do,availability_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-04-21,V031,S031,Airbnb Referral,Mobile,/book-your-stay,page_view,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-04-21,V031,S031,Airbnb Referral,Mobile,/book-your-stay,airbnb_review_click,https://www.shortoffmountainretreats.com/book-your-stay/
+2026-04-25,V032,S032,Referral,Desktop,/home,page_view,https://www.shortoffmountainretreats.com/
+2026-04-25,V032,S032,Referral,Desktop,/home,book_button_click,https://www.shortoffmountainretreats.com/book-your-stay/
