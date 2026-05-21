@@ -1,18 +1,24 @@
-import pandas as pd
 from pathlib import Path
+
+from data_cleaning_utils import (
+    add_month_column,
+    clean_numeric_columns,
+    clean_text_columns,
+    load_csv,
+    save_csv,
+    standardize_dates,
+)
 
 INPUT_FILE = Path("data_sample/sample_lodgify_bookings.csv")
 OUTPUT_FILE = Path("data_sample/clean_lodgify_bookings.csv")
 
+
 def clean_lodgify_bookings():
-    df = pd.read_csv(INPUT_FILE)
+    df = load_csv(INPUT_FILE)
 
-    date_columns = ["booking_date", "check_in", "check_out"]
-    for col in date_columns:
-        df[col] = pd.to_datetime(df[col])
-
-    df["booking_month"] = df["booking_date"].dt.to_period("M").astype(str)
-    df["check_in_month"] = df["check_in"].dt.to_period("M").astype(str)
+    df = standardize_dates(df, ["booking_date", "check_in", "check_out"])
+    df = add_month_column(df, "booking_date", "booking_month")
+    df = add_month_column(df, "check_in", "check_in_month")
 
     numeric_columns = [
         "nights",
@@ -23,19 +29,16 @@ def clean_lodgify_bookings():
         "pet_fee",
     ]
 
-    for col in numeric_columns:
-        df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+    df = clean_numeric_columns(df, numeric_columns)
+    df = clean_text_columns(df, ["channel", "status"])
 
     df["estimated_net_revenue"] = df["gross_revenue"]
     df["revenue_per_night"] = df["gross_revenue"] / df["nights"]
+    df["channel"] = df["channel"].replace("Unknown", "Lodgify Direct")
+    df["status"] = df["status"].str.lower()
 
-    df["channel"] = df["channel"].fillna("Lodgify Direct").astype(str).str.strip()
-    df["status"] = df["status"].fillna("Unknown").astype(str).str.lower()
+    save_csv(df, OUTPUT_FILE)
 
-    df.to_csv(OUTPUT_FILE, index=False)
-
-    print(f"Cleaned Lodgify bookings saved to {OUTPUT_FILE}")
-    print(df.head())
 
 if __name__ == "__main__":
     clean_lodgify_bookings()
