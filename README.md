@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This project is a business intelligence dashboard for a privately owned vacation rental business, Shortoff Mountain Retreats.
+This project is a business intelligence analysis project for a privately owned vacation rental business, Shortoff Mountain Retreats.
 
-The dashboard combines website event data, direct-booking data, and Airbnb-style booking data to compare marketing channels, booking behavior, revenue performance, and direct-booking opportunity.
+The project combines website event data, direct-booking data, and Airbnb-style booking data to compare marketing channels, booking behavior, revenue performance, and direct-booking opportunity.
 
 The goal is to understand which traffic sources and booking platforms create the most profitable reservations and where guests may be dropping off before booking.
 
@@ -69,38 +69,47 @@ shortoff-booking-intelligence/
 │   ├── clean_website_events.csv
 │   ├── clean_lodgify_bookings.csv
 │   └── clean_airbnb_bookings.csv
-├── data_private/
-│   └── excluded from GitHub
 ├── notebooks/
 │   └── booking_intelligence_analysis.ipynb
 ├── src/
 │   ├── clean_website_events.py
 │   ├── clean_lodgify.py
 │   ├── clean_airbnb.py
+│   ├── data_cleaning_utils.py
 │   └── build_database.py
 ├── sql/
 │   └── marketing_metrics.sql
 ├── docs/
+│   ├── project_brief.md
+│   ├── data_source_notes.md
 │   └── screenshots/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
+
+Note: `data_private/` is used locally only and is excluded from GitHub through `.gitignore`.
 
 ## Dashboard Screenshots
 
 ### Traffic by Source
+
 ![Traffic by Source](docs/screenshots/traffic_by_source.png)
 
 ### Booking Intent by Source
+
 ![Booking Intent by Source](docs/screenshots/booking_intent_by_source.png)
 
 ### Revenue by Platform
+
 ![Revenue by Platform](docs/screenshots/revenue_by_platform.png)
 
 ### Monthly Revenue by Platform
+
 ![Monthly Revenue by Platform](docs/screenshots/monthly_revenue_by_platform.png)
 
 ### Average Booking Value by Platform
+
 ![Average Booking Value by Platform](docs/screenshots/avg_value_by_platform.png)
 
 ## Sample Insights
@@ -112,3 +121,64 @@ Initial analysis shows several useful business questions the dashboard can suppo
 3. Airbnb review clicks should be treated as a high-intent trust signal.
 4. Mobile and desktop behavior should be compared to identify potential booking friction.
 5. Direct-booking conversion should be tracked because small improvements may increase retained revenue.
+
+## How to Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the cleaning scripts:
+
+```bash
+python src/clean_website_events.py
+python src/clean_lodgify.py
+python src/clean_airbnb.py
+```
+
+Build the SQLite database:
+
+```bash
+python src/build_database.py
+```
+
+Open the analysis notebook:
+
+```bash
+jupyter notebook notebooks/booking_intelligence_analysis.ipynb
+```
+
+## SQL Analysis
+
+The SQL file `sql/marketing_metrics.sql` includes queries for:
+
+- Website events by traffic source
+- Booking-intent events by traffic source
+- Airbnb review clicks by traffic source
+- Revenue by booking platform
+- Monthly net revenue by platform
+- Average stay length by platform
+- Estimated Airbnb fee impact
+- Direct booking retained revenue
+
+## Privacy Note
+
+This public repository uses synthetic sample data.
+
+Real guest names, emails, phone numbers, reservation IDs, platform exports, exact booking records, revenue details, credentials, and private business files are not included.
+
+The local `data_private/` folder is excluded through `.gitignore`.
+
+## Future Improvements
+
+Future versions could include:
+
+- Real private Lodgify, Airbnb, and website analytics exports
+- Google Analytics 4 event tracking
+- Streamlit dashboard
+- Website conversion tracking
+- Direct-booking funnel analysis
+- Automated monthly reporting
+- Lightweight forecasting for seasonal demand
