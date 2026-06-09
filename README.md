@@ -29,6 +29,7 @@ Without a combined view of website behavior and booking-channel revenue, it is d
 - SQLite
 - Matplotlib
 - Seaborn
+- Streamlit
 - Git
 - GitHub
 
@@ -90,6 +91,23 @@ shortoff-booking-intelligence/
 
 Note: `data_private/` is used locally only and is excluded from GitHub through `.gitignore`.
 
+## Capstone Streamlit Dashboard
+
+This repository culminates in a Streamlit dashboard under `dashboard/`.
+
+The dashboard turns the project analysis into an operator-facing decision surface for a small hospitality business. It combines sample reservation, web analytics, SEO, review, and business-health data to show how the underlying booking-intelligence model can support practical decisions around channel mix, direct-booking performance, marketing focus, and guest experience.
+
+Live demo: [Shortoff Booking Intelligence Dashboard](https://shortoff-live-dashboard-n9dpou44xivdwgnfnyqbus.streamlit.app/)
+
+Run locally:
+
+```bash
+cd dashboard
+streamlit run app.py
+```
+
+The dashboard uses sample CSVs only. Private booking, guest, revenue, and credential data are intentionally excluded.
+
 ## Dashboard Screenshots
 
 ### Traffic by Source
@@ -150,6 +168,13 @@ Open the analysis notebook:
 jupyter notebook notebooks/booking_intelligence_analysis.ipynb
 ```
 
+Run the capstone Streamlit dashboard:
+
+```bash
+cd dashboard
+streamlit run app.py
+```
+
 ## SQL Analysis
 
 The SQL file `sql/marketing_metrics.sql` includes queries for:
@@ -177,7 +202,6 @@ Future versions could include:
 
 - Real private Lodgify, Airbnb, and website analytics exports
 - Google Analytics 4 event tracking
-- Streamlit dashboard
 - Website conversion tracking
 - Direct-booking funnel analysis
 - Automated monthly reporting
